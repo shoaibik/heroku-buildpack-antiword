@@ -3,7 +3,7 @@ BUILD_DIR=$1
 
 INSTALL_DIR=$BUILD_DIR/vendor/antiword/
 
-ENVSCRIPT=${HOME}.profile.d/antiword.sh
+ENVSCRIPT=$BUILD_DIR/.profile.d/antiword.sh
 
 ANTIWORD_DIR=${HOME}/vendor/antiword
 
@@ -17,5 +17,7 @@ echo "Complete!"
 echo "Building runtime environment for antiword"
 cd $INSTALL_DIR/antiword-0.37
 make
+cd ..
+cp $INSTALL_DIR/antiword-0.37/antiword .
 
 echo "export PATH=\"$ANTIWORD_DIR/antiword-0.37:\$PATH\"" > ENVSCRIPT
