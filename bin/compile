@@ -3,7 +3,7 @@ BUILD_DIR=$1
 
 INSTALL_DIR=$BUILD_DIR/vendor/antiword/
 
-ENVSCRIPT=$BUILD_DIR/.profile.d/antiword.sh
+ENVSCRIPT=${HOME}/.profile.d/antiword.sh
 
 ANTIWORD_DIR=${HOME}/vendor/antiword/antiword-0.37
 
