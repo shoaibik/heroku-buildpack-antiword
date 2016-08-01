@@ -15,9 +15,9 @@ tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
 echo "Complete!"
 
 echo "Building runtime environment for antiword"
-cd $INSTALL_DIR/antiword-0.37
+cd $ANTIWORD_DIR/antiword-0.37
 make
 cd ..
-cp $INSTALL_DIR/antiword-0.37/antiword .
+cp $ANTIWORD_DIR/antiword-0.37/antiword .
 
 echo "export PATH=\"$ANTIWORD_DIR/antiword-0.37:\$PATH\"" > ENVSCRIPT
