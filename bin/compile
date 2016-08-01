@@ -11,10 +11,11 @@ echo "Untarring antiword-0.37.tar.gz into ${INSTALL_DIR}"
 
 mkdir -p $INSTALL_DIR
 tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
-${INSTALL_DIR}antiword-0.37/make
+cd ${INSTALL_DIR}antiword-0.37
+make
 
 echo "Complete!"
-echo "Building runtime environment for antiword"
+echo "Building runtime environment for antiword int ${BUILD_DIR}"
 
 mkdir -p $BUILD_DIR/.profile.d
 
