@@ -5,7 +5,7 @@ INSTALL_DIR=$BUILD_DIR/vendor/antiword/
 
 ENVSCRIPT=$BUILD_DIR/.profile.d/antiword.sh
 
-ANTIWORD_DIR=${HOME}/vendor/antiword
+ANTIWORD_DIR=${HOME}/vendor/antiword/antiword-0.37
 
 echo "Untarring antiword-0.37.tar.gz into ${INSTALL_DIR}"
 
@@ -19,4 +19,4 @@ echo "Building runtime environment for antiword int ${BUILD_DIR}"
 
 mkdir -p $BUILD_DIR/.profile.d
 
-echo "export PATH=\"${ANTIWORD_DIR}antiword-0.37:\$PATH\"" > ENVSCRIPT
+echo "export PATH=\"${ANTIWORD_DIR}:\$PATH\"" > ENVSCRIPT
