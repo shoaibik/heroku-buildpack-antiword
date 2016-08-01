@@ -19,3 +19,5 @@ mkdir -p $BUILD_DIR/.profile.d
 echo "makin ${BUILD_DIR}/.profile.d"
 
 echo "export PATH=\"${ANTIWORD_DIR}:\$PATH\"" > $BUILD_DIR/.profile.d/antiword.sh
+cd $BUILD_DIR/.profile.d
+ls -al
