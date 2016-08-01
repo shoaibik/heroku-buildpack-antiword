@@ -5,7 +5,7 @@ INSTALL_DIR=$BUILD_DIR/vendor/antiword/
 
 ENVSCRIPT=$BUILD_DIR/antiword
 
-ANTIWORD_DIR=${HOME}/vendor/antiword/antiword
+ANTIWORD_DIR=${HOME}/vendor/antiword
 
 echo "Untarring antiword-0.37.tar.gz into ${INSTALL_DIR}"
 
@@ -13,9 +13,9 @@ mkdir -p $INSTALL_DIR
 tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
 
 echo "Complete!"
-pwd
-echo "Building runtime environment for antiword into  ${INSTALL_DIR}"
+
+echo "Building runtime environment for antiword"
 cd $INSTALL_DIR/antiword-0.37
-pwd
 make
-echo "export PATH=\"$ANTIWORD_DIR/bin64:\$PATH\"" > $ENVSCRIPT
+
+echo "export PATH=\"$ANTIWORD_DIR/antiword-0.37:\$PATH\"" > $ENVSCRIPT
