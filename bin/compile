@@ -18,6 +18,6 @@ echo "Building runtime environment for antiword"
 cd $INSTALL_DIR/antiword-0.37
 make
 cd ..
-cp $ANTIWORD_DIR/antiword-0.37/antiword .
 
+mkdir -p $BUILD_DIR/.profile.d
 echo "export PATH=\"$ANTIWORD_DIR/antiword-0.37:\$PATH\"" > ENVSCRIPT
