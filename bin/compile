@@ -12,7 +12,8 @@ tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
 cd ${INSTALL_DIR}antiword-0.37
 make
 cd ${HOME}
-mkdir -p .antiword
+pwd
+mkdir .antiword
 cp vendor/antiword/antiword-0.37/Resources/* .antiword
 
 
