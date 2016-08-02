@@ -13,7 +13,7 @@ cd ${INSTALL_DIR}antiword-0.37
 make
 
 mkdir ${HOME}/.antiword
-cp ${HOME}/vendor/antiword/antiword-0.37/Resources/* .antiword
+cp $INSTALL_DIR/Resources/* .antiword
 
 
 echo "Complete!"
