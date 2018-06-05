@@ -11,11 +11,8 @@ mkdir -p $INSTALL_DIR
 tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
 cd ${INSTALL_DIR}antiword-0.37
 make
-
 mkdir ${HOME}/.antiword
-
-cd ${HOME}
-cp ${ANTIWORD_DIR}/Resources/* ./antiword
+cp ${INSTALL_DIR}Resources/. .antiword
 
 echo "Complete!"
 echo "Building runtime environment for antiword int ${BUILD_DIR}"
