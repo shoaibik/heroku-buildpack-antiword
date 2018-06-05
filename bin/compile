@@ -12,7 +12,7 @@ tar -zxvf antiword-0.37.tar.gz -C $INSTALL_DIR
 cd ${INSTALL_DIR}antiword-0.37
 make
 mkdir ${HOME}/.antiword
-cp ${INSTALL_DIR}/. .antiword
+cp ${INSTALL_DIR}. .antiword
 
 echo "Complete!"
 echo "Building runtime environment for antiword int ${BUILD_DIR}"
