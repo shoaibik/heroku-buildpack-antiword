@@ -13,7 +13,9 @@ cd ${INSTALL_DIR}antiword-0.37
 make
 
 mkdir ${HOME}/.antiword
-cp ${INSTALL_DIR}Resources/. .antiword
+
+cd ${HOME}
+cp ${ANTIWORD_DIR}/Resources/* ./antiword
 
 echo "Complete!"
 echo "Building runtime environment for antiword int ${BUILD_DIR}"
